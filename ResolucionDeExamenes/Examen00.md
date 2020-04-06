@@ -17,13 +17,28 @@
 8) una maquina con un numero finito de estados
 
 ### Parte 3
-1) una secuencia de pasos ordenado que resuelve un problema
-2) es un paradigma de programacion basado en utilizar funciones o subrutinas
-3) Las tres subrutinas que se usa para solucionar los problemas, son la ejecucion de una secuencia tras otras, condicioneles y por ultimo las iteracines
-4) Los parametros son los valores que le fueron pasados a una funcion, los argumentos se utilizan cuando se llama a una funcion y se le pasa valores
-5)Pueden ser pasados por referencia, donde se le pasa un puntero a la dirreccion de memoria donde se encuentra alojada la varible y puede ser modificada. O se le pude pasar directamente la varible donde se crearia una copia y no afecta la variables original 
-6)Los parametros de entrada son los valores que le fueron enviados a la  funcion , los de salida son los valores los cuales son devueltos por la funcion y los de entrada y salida son los valores que fueron pasados por referencia y fueron modificados.
-7) Es una forma de modelar un conjunto de datos ( varibles ) de forma que los encapsulen de manera que faliciten las solucion del problema
-8) Una pila es una forma de almacenar datos de manera que cumpla la regla de LIFO donde el ultimo en entrar es el primero en  salir , Una cola en cambio sigue la regla FIFO donde el ultimo en entrar es el primero en salir
-9) Un archivo es la forma de almacenar informacion de manera permanente
+1)  Una secuencia de pasos ordenado que resuelve un problema
+2)  Es un paradigma de programacion basado en utilizar funciones o subrutinas
+3)  Las tres subrutinas que se usa para solucionar los problemas, son la ejecucion de una secuencia tras otras, condicioneles  y por ultimo las iteracines.
+4)  Los parametros son los valores que le fueron pasados a una funcion, los argumentos se utilizan cuando se llama a una funcion y se le pasa valores,
+5)  Pueden ser pasados por referencia, donde se le pasa un puntero a la dirreccion de memoria donde se encuentra alojada la varible y puede ser modificada. O se le pude pasar directamente la varible donde se crearia una copia y no afecta la variables original 
+6)  Los parametros de entrada son los valores que le fueron enviados a la  funcion , los de salida son los valores los cuales son devueltos por la funcion y los de entrada y salida son los valores que fueron pasados por referencia y fueron modificados.
+7)  Es una forma de modelar un conjunto de datos ( varibles ) de forma que los encapsulen de manera que faliciten las solucion del problema
+8)  Una pila es una forma de almacenar datos de manera que cumpla la regla de LIFO donde el ultimo en entrar es el primero en  salir ,Una cola en cambio sigue la regla FIFO donde el ultimo en entrar es el primero en salir.
+9)  Un archivo es la forma de almacenar informacion de manera permanente.
 
+
+~~~
+float calcularPromedio(int *numeros, int tamanio ){
+
+  int acomulador = 0;
+  int indice = 0;
+  while( indice < tamanio){
+  acomulador = acomulador + numeros[indice];
+  indice++;
+  };
+  
+ return acomulador/tamanio;
+  }
+
+~~~
